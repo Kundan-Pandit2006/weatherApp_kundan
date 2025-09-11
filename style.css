@@ -80,6 +80,35 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+} 
+
+/* New Styles for Search Results Container */
+.search-results {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 10px;
+    overflow-y: auto;
+    max-height: 200px; 
+    /* Limits the height and adds a scrollbar */
+    display: none; 
+ }
+
+.search-results.active {
+    display: block;
+}
+
+.search-results .result-item {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: background 0.3s ease;
+}
+
+.search-results .result-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
 .weather-box {
@@ -92,7 +121,7 @@ body {
 .not-found {
     overflow: hidden;
     visibility: hidden;
-} 
+}
 
 .weather-box.active,
 .weather-details.active,
@@ -103,7 +132,7 @@ body {
 .weather-box .box,
 .not-found .box {
     transform: translateY(-100%);
-} 
+}
 
 .weather-box.active .box,
 .not-found.active .box {
@@ -226,7 +255,8 @@ body {
     display: none;
 }
 
-#clone-info-weather,
+/* These styles were part of your original code, and they are kept here to maintain your animations */
+ #clone-info-weather,
 #clone-info-humidity,
 #clone-info-wind {
     position: absolute;
@@ -257,4 +287,4 @@ body {
 .active-clone#clone-info-humidity span,
 .active-clone#clone-info-wind span {
     transform: translateY(0%);
-}
+} 
