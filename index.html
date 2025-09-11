@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Forecast</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <div class="container">
         <div class="search-box">
-          <i class='bxr  bx-location-alt'></i>
-            <input type="text" placeholder="enter your location">
+            <i class='bx bxs-map'></i>
+            <input type="text" placeholder="enter your location" spellcheck="false">
             <button class='bx bx-search'></button>
-
         </div>
+
+        <div class="search-results"></div>
 
         <p class="city-hide">City Hide</p>
 
@@ -34,7 +34,7 @@
         </div>
         <div class="weather-details">
             <div class="humidity">
-                <i class='bxr  bx-water'></i> 
+                <i class='bx bxs-droplet-half'></i>
                 <div class="text">
                     <div class="info-humidity">
                         <span>0%</span>
@@ -44,7 +44,7 @@
             </div>
 
             <div class="wind">
-                <i class='bxr  bxs-wind'></i> 
+                <i class='bx bxs-wind'></i> 
                 <div class="text">
                     <div class="info-wind">
                         <span>0Km/h</span>
